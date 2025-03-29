@@ -1,4 +1,4 @@
-#Studio Ghibli Trending Movie List
+# Studio Ghibli Trending Movie List
 
 A simple React app that displays a trending list of Studio Ghibli movies. Each movie includes a title, release year, and poster.
 
