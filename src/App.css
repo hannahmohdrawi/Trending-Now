@@ -1,38 +1,52 @@
-.App {
+* {
   text-align: center;
+  background-color:black;
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h2{
+  font-size: 4rem;
+  font-family: 'Sour Gummy';
+  text-shadow: 5px 5px 10px grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3, h4{
+  font-family: 'Sour Gummy';
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.movie img{
+  width: 200px; 
+  height: 300px;
+  box-shadow: 3px 3px 9px grey;
+  border-radius: 2px;
+}
+
+.movie img:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+
+/* latin */
+@font-face {
+  font-family: 'Sour Gummy';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourgummy/v1/8At5Gs2gPYuNDii97MjjBrLbYfdJvDU5AZfP5qBDfNE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
