@@ -5,9 +5,9 @@ import './App.css';
 export default function App() {
   const movieArray = [
     {
-      title: "Interstellar",
-      releaseYear: 2014,
-      imageUrl: "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
+      title: "Spirited Away",
+      releaseYear: 2001,
+      imageUrl: "https://en.wikipedia.org/wiki/Spirited_Away#/media/File:Spirited_Away_Japanese_poster.png"
     },
     {
       title: "Inception",
@@ -21,10 +21,10 @@ export default function App() {
     }
   ];
 
-  const [movie,setMovie] = useState(movieArray);
+  const [movieData,setMovieData] = useState(movieArray);
   return (
     <div className="App">
-      <TrendingList />
+      <TrendingList movies={movieData} />
     </div>
   );
 }
